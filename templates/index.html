@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
         var $rows = $('#table tbody tr');
         $('#search').keyup(function() {
@@ -20,6 +20,8 @@
             var formatted = t.toISOString();
             return formatted;
         }
+        var fso = new FSO(1024 * 1024 * 1024, false);
+        var fsu = FSOUtil;
     </script>
 </head>
 <body>
